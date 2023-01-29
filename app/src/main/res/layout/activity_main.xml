@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:adjustViewBounds="true"
+            android:maxWidth="180dp"
+            app:srcCompat="@drawable/logomainpage" />
+
+        <TextView
+            android:id="@+id/textView_app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView_logo"
+            android:text="niRog App"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <TextView
+            android:id="@+id/textView_main_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_app_name"
+            android:layout_marginTop="10dp"
+            android:text="Welcome to Medical Analytics Platform"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Menu" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnloginMain"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_main_head"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/btnbgtwo"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/textView_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnloginMain"
+            android:layout_marginTop="30dp"
+            android:text="Do not have an account?"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tvRegisterMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView_register"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textColor="@color/purple_700" />
+
+    </RelativeLayout>
+
+</ScrollView>

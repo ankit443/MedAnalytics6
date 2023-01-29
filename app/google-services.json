@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "935354479382",
+    "project_id": "aarogya-sevak-six",
+    "storage_bucket": "aarogya-sevak-six.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935354479382:android:d32bfcab4ff2dd12199637",
+        "android_client_info": {
+          "package_name": "com.epics.medanalytics6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935354479382-eqsdbh9ikkn1b5sldh6ua8ld1njnjb0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp0WUjt6sn_g6om2sXBrf9IJ81qeCVq0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935354479382-eqsdbh9ikkn1b5sldh6ua8ld1njnjb0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
