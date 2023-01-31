@@ -57,7 +57,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //Show/Hide password
         imvShowHidePwdLA = findViewById(R.id.imageView_show_hide_pwdLA);
-        imvShowHidePwdLA.setImageResource(R.drawable.ic_eye_24);
+        imvShowHidePwdLA.setImageResource(R.drawable.ic_hide_pwd);
         imvShowHidePwdLA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
