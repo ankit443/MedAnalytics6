@@ -369,7 +369,7 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/imageView_show_hide_pwdRA"
+                        android:id="@+id/imageView_show_hide_pwdFirstRA"
                         android:layout_width="33dp"
                         android:layout_height="33dp"
                         android:layout_alignParentEnd="true"
@@ -427,7 +427,7 @@
                         android:textSize="16sp" />
 
                     <ImageView
-                        android:id="@+id/imvShowHideConfirmedPasswordRA"
+                        android:id="@+id/imvShowHideConfirmedSecondPasswordRA"
                         android:layout_width="33dp"
                         android:layout_height="33dp"
                         android:layout_alignParentEnd="true"
