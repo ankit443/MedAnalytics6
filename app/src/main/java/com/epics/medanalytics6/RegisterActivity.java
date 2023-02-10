@@ -38,12 +38,12 @@ import java.util.regex.Pattern;
 public class RegisterActivity extends AppCompatActivity { 
 
     EditText etRegFullName, etRegEmail, etRegDOB, etRegMobileNumber, etRegPwd, etRegConfirmPwd;
-    EditText etLoginPwdLA;
+    EditText etLoginPwdLA, etConfirmPwdRA;
     ProgressBar progressBarReg;
     ImageView imvShowHidePwdLA;
     RadioGroup RGRegGender;
     RadioButton RBRegGenderAfterSelectionBtn;
-    ImageView imvShowHidePwdRA;
+    ImageView imvShowHidePwdRA, imvShowHidePwdConfirmRA;
 
     FirebaseAuth mAuth;
     FirebaseUser mUser;
@@ -69,6 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         etRegPwd = findViewById(R.id.editText_register_password);
         etRegConfirmPwd = findViewById(R.id.etConfirmPassword);
         etLoginPwdLA = findViewById(R.id.editText_login_pwd_LA);
+        imvShowHidePwdConfirmRA = findViewById(R.id.imvShowHideConfirmedSecondPasswordRA);
 //        imvShowHidePwdLA = findViewById(R.id.imageView_show_hide_pwdLA);
 
 
@@ -80,6 +81,7 @@ public class RegisterActivity extends AppCompatActivity {
         RGRegGender.clearCheck();
 
         //Show/Hide password
+        //First Icon for the Show/Hide Password
         imvShowHidePwdRA = findViewById(R.id.imageView_show_hide_pwdFirstRA);
         imvShowHidePwdRA.setImageResource(R.drawable.ic_show_pwd);
         imvShowHidePwdRA.setOnClickListener(new View.OnClickListener() {
@@ -102,6 +104,30 @@ public class RegisterActivity extends AppCompatActivity {
                 }
             }
         });
+
+        //Show/hide icon issue for the second icon in the Register Page
+        imvShowHidePwdConfirmRA.setImageResource(R.drawable.ic_show_pwd);
+        imvShowHidePwdConfirmRA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (etRegConfirmPwd.getTransformationMethod().equals(HideReturnsTransformationMethod.getInstance())){
+
+                    //If password is visible in the confirm password page
+                    etRegConfirmPwd.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    //change Icon
+                    imvShowHidePwdConfirmRA.setImageResource(R.drawable.ic_hide_pwd);
+
+                }
+
+                else{
+                    etRegConfirmPwd.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    imvShowHidePwdConfirmRA.setImageResource(R.drawable.ic_show_pwd);
+                }
+
+            }
+        });
+
 
 
 
