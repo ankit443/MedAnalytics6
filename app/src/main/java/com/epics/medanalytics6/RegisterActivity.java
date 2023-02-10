@@ -69,7 +69,7 @@ public class RegisterActivity extends AppCompatActivity {
         etRegPwd = findViewById(R.id.editText_register_password);
         etRegConfirmPwd = findViewById(R.id.etConfirmPassword);
         etLoginPwdLA = findViewById(R.id.editText_login_pwd_LA);
-        imvShowHidePwdLA = findViewById(R.id.imageView_show_hide_pwdLA);
+//        imvShowHidePwdLA = findViewById(R.id.imageView_show_hide_pwdLA);
 
 
 
@@ -80,8 +80,8 @@ public class RegisterActivity extends AppCompatActivity {
         RGRegGender.clearCheck();
 
         //Show/Hide password
-        imvShowHidePwdRA = findViewById(R.id.imageView_show_hide_pwdRA);
-        imvShowHidePwdRA.setImageResource(R.drawable.ic_eye_24);
+        imvShowHidePwdRA = findViewById(R.id.imageView_show_hide_pwdFirstRA);
+        imvShowHidePwdRA.setImageResource(R.drawable.ic_show_pwd);
         imvShowHidePwdRA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,8 +96,8 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 else {
-                    etLoginPwdLA.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
-                    imvShowHidePwdLA.setImageResource(R.drawable.ic_show_pwd);
+                    etRegPwd.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    imvShowHidePwdRA.setImageResource(R.drawable.ic_show_pwd);
 
                 }
             }
