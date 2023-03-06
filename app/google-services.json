@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "935354479382",
-    "project_id": "aarogya-sevak-six",
-    "storage_bucket": "aarogya-sevak-six.appspot.com"
+    "project_number": "300005791758",
+    "project_id": "nirogone",
+    "storage_bucket": "nirogone.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:935354479382:android:d32bfcab4ff2dd12199637",
+        "mobilesdk_app_id": "1:300005791758:android:03f30352c5af0498ce045f",
         "android_client_info": {
           "package_name": "com.epics.medanalytics6"
         }
       },
       "oauth_client": [
         {
-          "client_id": "935354479382-eqsdbh9ikkn1b5sldh6ua8ld1njnjb0t.apps.googleusercontent.com",
+          "client_id": "300005791758-l5a1unnm6qrddl64hrlmfg4c4apurqga.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAp0WUjt6sn_g6om2sXBrf9IJ81qeCVq0U"
+          "current_key": "AIzaSyAGaZiqWW_aSb3u4TxTIfajiONbtL8Q3pg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "935354479382-eqsdbh9ikkn1b5sldh6ua8ld1njnjb0t.apps.googleusercontent.com",
+              "client_id": "300005791758-l5a1unnm6qrddl64hrlmfg4c4apurqga.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
