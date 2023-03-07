@@ -36,6 +36,7 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar progressBarLA;
     FirebaseAuth mAuthProfileLA;
     ImageView imvShowHidePwdLA;
+//    Button tempBtnDash;
 
     private static final String TAG = "LoginActivity";
 
@@ -48,12 +49,18 @@ public class LoginActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("niRog App Login");
 
+        //remember to delete the temporary button from here
+//        tempBtnDash = findViewById(R.id.tempBtnDash);
+
         etLoginEmailLA = findViewById(R.id.editText_login_email_LA);
         etLoginPwdLA = findViewById(R.id.editText_login_pwd_LA);
 
         progressBarLA = findViewById(R.id.progressBarLA);
 
         mAuthProfileLA = FirebaseAuth.getInstance();
+
+
+
 
         //Show/Hide password
         imvShowHidePwdLA = findViewById(R.id.imageView_show_hide_pwdLA);
@@ -143,8 +150,15 @@ public class LoginActivity extends AppCompatActivity {
 
                         //open user profile
                         //Start the UserProAct
-                        startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
-                        finish(); //Close the login activity
+//                        startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
+//                        finish(); //Close the login activity
+//
+
+                        //the actual code is above this line, make sure to uncomment it when you want to finalize it next time
+
+                        startActivity(new Intent(LoginActivity.this, DashboardMain.class));
+                        finish();
+
 
 
 
@@ -237,6 +251,12 @@ public class LoginActivity extends AppCompatActivity {
 //commenting out to test
             startActivity(new Intent(LoginActivity.this, UserProfileActivity.class));
             finish(); //Close the login activity
+
+            //*** highly important, make sure to uncomment this line when you are trying to run the app properly
+//            the correct code is above these 2 lines
+            startActivity(new Intent(LoginActivity.this, DashboardMain.class));
+            finish();
+
 
         }
 

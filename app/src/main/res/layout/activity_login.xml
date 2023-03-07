@@ -219,7 +219,9 @@
                     android:text="@string/login"
                     android:textColor="@color/white" />
 
-<!--                &lt;!&ndash;                    marginLeft = 70dp&ndash;&gt; this was the earlier code-->
+
+                <!--                &lt;!&ndash;                    marginLeft = 70dp&ndash;&gt; this was the earlier code-->
+
 
                 <LinearLayout
                     android:layout_width="wrap_content"
