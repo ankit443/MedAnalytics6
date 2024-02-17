@@ -1,4 +1,4 @@
-### Medical Analytics Project - niRog
+### Medical Analytics Project - HealthSure
 
 Android Studio: Java, XML; Firebase Database
 
